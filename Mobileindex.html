@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="起始页,苏维埃,苏维埃红色起始页">
+		<title>无限起始页移动版</title>
+		<!--<script type="text/javascript">
+		    
+		     var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+		     var browser = navigator.userAgent.toLowerCase();
+		     var isMobile = false;
+		     for (var i = 0; i < mobileAgent.length; i++) {
+		         if (browser.indexOf(mobileAgent[i]) != -1) {
+		             isMobile = true;
+		             break;
+		         }
+				 else{
+					 window.location.href="https://utab.rth1.me"
+					 break;
+				 }
+		     }
+		</script>-->
+		<style>
+			@font-face {
+			  font-family: 'iconfont';
+			  src: url('iconfont.woff2?t=1641790537233') format('woff2'),
+			       url('iconfont.woff?t=1641790537233') format('woff'),
+			       url('iconfont.ttf?t=1641790537233') format('truetype');
+			}
+			.iconfont {
+			  font-family: "iconfont" !important;
+			  font-size: 16px;
+			  font-style: normal;
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			}
+			.center{text-align: center;}
+			a{text-decoration: none;}
+			.line{display: inline;}
+			.button
+			{
+				width: 100px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				background-color: hotpink;
+				font-size: 14px;
+			}
+			.iconBackBoxAll>a img {
+			  /* 图片定位 */
+			  position: absolute;
+			  width: 46px;
+			  height: 46px;
+			  top: 50%;
+			  margin-top: -30px;
+			  left: 50%;
+			  margin-left: -23px;
+			}
+			body
+			{
+				min-height: 100vh;
+				background-color: dimgray;
+				background-image:url(https://www.guanzhunet.com/uploads/allimg/161129/13-16112Z92621.jpg);
+				color: #FFFFFF;
+				background-size: cover
+			}
+			.white
+			{
+				width: 360px;
+				height: 580px;
+				background: #f1f1f1;
+				padding: 80px 40px;
+				border-radius: 10px;
+				position: absolute;
+				left: 50%;
+				top:50%;
+				transform: translate(-50%,-50%);
+			}
+			.bluea:visited{
+				color: #2980b9;
+			}
+			.block{
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				border-radius: 5px;
+				background-color: #FFFFFF;
+				box-shadow:2px 0px 2px gray;
+			}
+			.block:active{
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				border-radius: 5px;
+				background-color: #FFFFFF;
+				box-shadow:2px 2px 2px gray inset;
+			}
+			.pr{
+				position: relative;
+				top:8px
+			}
+			.article{
+				color:#F1F1F1;
+				font-size: 10px;
+				position: relative;
+				top:7px
+			}
+			.a{
+				color: #1ABC9C;
+			}
+			.a:visited{
+				color: #1ABC9C;
+			}
+			.a:active{
+				color: red;
+			}
+			input{
+				outline: none;
+				border-radius: 30px;
+				height: 30px;
+				width: 200px;
+				text-align: center;
+				position: relative;
+				left:10px;
+				border:none;
+			}
+			input.focus{
+				border-color: #66afe9;
+				outline: 0;
+				-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+				box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8 rgba(102,175,233,.6);
+			}
+			input:focus::-webkit-input-placeholder {
+				color: transparent;
+				}
+			input:focus::-moz-input-placeholder{
+				color: transparent;
+			}
+			input:focus::-ms-input-placeholder{
+				color: transparent;
+			}
+			.button1{
+				/* border: 0px; */
+				background-color:#3498DB;
+				width:40px;
+				height: 30px;
+				background-size: 100%;
+				border-radius: 10px;
+				cursor: pointer;
+				color: #F1F1F1;
+				transition: .5s;
+				position: relative;
+				right:60px;
+				top:1px;
+			}
+			.foot{
+				color: darkorange;
+			}
+			.foot:active{
+				color:red
+			}
+			.foot:visited{
+				color: darkorange;
+			}
+		</style>
+		<link rel="shortcut icon" href="https://tse1-mm.cn.bing.net/th/id/R-C.863829b658ce9d5c9bd25b5f8ae29f79?rik=ucUaRxzuCgtebw&riu=http%3a%2f%2fpic.616pic.com%2fys_img%2f00%2f46%2f43%2fLJ78GQojZg.jpg&ehk=mMrdS4L5rGWQGJfO1A2jNbX2jiYnLlWLqR2yBRjVsxc%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"/>
+	</head>
+	<body>
+		<div class="center">
+			<h1 class="showtime"></h1>
+			<script>
+				var t = null
+				t = time(time,1000);
+				function time() {
+					clearTimeout(t)
+					var d = new Date();
+					var Day = d.getDate();
+					var Month = d.getMonth() + 1;
+					var Year = d.getFullYear();
+					var Weekday = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+					var Hours = d.getHours()<10?"0"+d.getHours():d.getHours();
+					var Minutes = d.getMinutes()<10?"0"+d.getMinutes():d.getMinutes();
+					var Seconds = d.getSeconds()<10?"0"+d.getSeconds():d.getSeconds();
+					document.querySelector(".showtime").innerHTML = Hours + ":" + Minutes + ":" + Seconds;
+					t = setTimeout(time,1000);
+				}
+				
+			</script>
+			<form action="https://cn.bing.com/search" target="_blank">
+				<input type=search name=q size=40 placeholder="搜索你想要的" maxlength=255 required="required" autocomplete="off">
+				<input type="submit" value="搜索" class="button1"><p/>
+				<!-- 此注释为未研发功能板块 -->
+				<!--<input type="radio" name="search" value="bing" id="bing" checked="checked">bing
+				<input type="radio" name="search" value="百度" id="baidu">百度
+				<input type="radio" name="search" value="Google" id="google">Google-->
+			</form>
+		</div>
+		<div class="center">
+			<a href="https://www.bilibili.com" class="block" target="_blank">
+				<img src="https://www.bilibili.com/favicon.ico?v=1" height="32px" width="32px" class="pr"/>
+				<p class="article">Bilibili</p>
+			</a>
+			
+			<a href="https://cowtransfer.com/" target="_blank" class="block">
+				<img src="https://tse1-mm.cn.bing.net/th/id/R-C.725065e2e1d5da58fc50555868fd34cc?rik=wRS%2fksbLfRQXGQ&riu=http%3a%2f%2fis2.mzstatic.com%2fimage%2fthumb%2fPurple128%2fv4%2fa5%2fe8%2fa0%2fa5e8a0ac-e945-e5d5-0afe-4fa83dad5a81%2fsource%2f512x512bb.jpg&ehk=Zst5%2ft9ljIJm1TWcW59%2b8o4uaEXzgasbYjSKWQt%2bYWo%3d&risl=&pid=ImgRaw&r=0" width="32px" height="32px" class="pr"/>
+				<p class="article">云盘</p>
+			</a>
+					
+			<a href="https://music.163.com/" target="_blank" class="block">
+				<img src="https://img.51miz.com/Element/00/69/05/37/8ced886e_E690537_bdfc86be.png" class="pr" height="32px" width="32px"/>
+				<p class="article">云音乐</p>
+			</a>
+			
+			<a href="https://mail.qq.com/" target="_blank" class="block">
+				<img src="https://img.51miz.com/Element/00/78/13/58/3b19d6ef_E781358_4ab05ea2.png" class="pr" height="32px" width="32px"/>
+				<p class="article">邮件</p>
+			</a>
+			</div>
+			<div class="center" style="position: relative;top:10px">
+			<a href="https://github.com/" target="_blank" class="block">
+				<img src="https://www.karelie.net/wp-content/uploads/GitHub-Mark.png" class="pr" height="32px" height="32px"/>
+				<p class="article">GitHub</p>
+			</a>
+					
+			<a href="https://cn.bing.com/maps/" target="_blank" class="block">
+				<img src="https://www.tencent.com/data/logo-pic/4.4.png" width="32px" height="32px" class="pr"/>
+				<p class="article">地图</p>
+			</a>
+			
+			<a href="https://cn.bing.com/translator/" target="_blank" class="block">
+				<img src="https://img3.doubanio.com/lpic/s27305064.jpg" width="32px" height="32px" class="pr"/>
+				<p class="article">翻译</p>
+			</a>
+			
+			<a href="https://cn.bing.com/images/trending?FORM=ILPTRD" target="_blank" class="block">
+				<img src="https://s.aigei.com/prevfiles/8a06b2f9a94047efa2f1212d29ad44d9.png?e=1735488000&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:XbOLF3Bab-XAWx7NoBE3MO-AIPM=" class="pr" height="32px" width="32px">
+				<p class="article">图片</p>
+			</a>
+		</div><p/>
+		
+			
+		<div class="center">
+			<strong style="position: relative;top:80px">
+				<em>
+					<script>
+					var strArry=new Array("巷南巷北卖不得，相逢大笑相揶揄。","儿云翁买不须钱，奉赊痴呆千百年。","桑野就耕父，荷锄随牧童。","身闲不睹中兴盛，羞逐乡人赛紫姑。","游伎皆秾李，行歌尽落梅。","海榴花发应相笑，无酒渊明亦独醒。","山无陵，江水为竭，冬雷震震，夏雨雪，天地合，乃敢与君绝。","终日不成章，泣涕零如雨。","文采双鸳鸯，裁为合欢被。","谁谓河广？一苇杭之。谁谓宋远？跂予望之。","四时更变化，岁暮一何速！","音响一何悲！弦急知柱促。","胡地多飚风，树木何修修。","宿草春风又，新阡去岁无。","满衣血泪与尘埃，乱后还乡亦可哀。","求之不得，寤寐思服。","主人何为言少钱，径须沽取对君酌。","君不见黄河之水天上来，奔流到海不复回。","春城无处不飞花，寒食东风御柳斜。","海榴花发应相笑，无酒渊明亦独醒。");
+					var adv;
+					adv=strArry[parseInt(Math.random()*20)];
+					document.write(adv);
+					</script>
+				</em>
+			</strong>	
+		</div>
+		<div class="center">
+			<p style="position:fixed; bottom:0px; width:100%; text-align:center;color: #000000">©2022 黄胜哲&张帅 保留一切权益&nbsp;|&nbsp;<a href="https://utab.rth1.me/About" class="foot"><strong>关于</strong></a></p>
+		</div>
+	</body>
+</html>
